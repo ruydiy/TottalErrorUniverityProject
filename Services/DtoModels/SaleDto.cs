@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Models.Interfaces
+namespace Services.DtoModels
 {
-    public class Sale : BaseModel, IFileDate
+    public class SaleDto
     {
         public DateTime ShipDate { get; set; }
 
@@ -18,11 +18,7 @@ namespace Models.Interfaces
 
         public decimal TotalProfit { get; set; }
 
-        public Order Order { get; set; }
+        public ItemTypeDto ItemType { get; set; }
 
-        public ItemType ItemType { get; set; }
-
-        //could be null
-        public string? FileDate { get; set; }
     }
 }
