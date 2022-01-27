@@ -55,12 +55,14 @@ namespace Services.Implementations
             Order order;
             Sale sale;
 
+            //from database
             HashSet<Region> dbRegions = this.DbContext.Regions.ToHashSet();
             HashSet<Country> dbCountries = this.DbContext.Countries.ToHashSet();
             HashSet<ItemType> dbItemTypes = this.DbContext.ItemTypes.ToHashSet();
             HashSet<Order> dbOrders = this.DbContext.Orders.ToHashSet();
             HashSet<Sale> dbSales = this.DbContext.Sales.ToHashSet();
 
+            //temporaries
             HashSet<Region> tmpRegions = new HashSet<Region>();
             HashSet<Country> tmpCountries = new HashSet<Country>();
             HashSet<ItemType> tmpItemTypes = new HashSet<ItemType>();

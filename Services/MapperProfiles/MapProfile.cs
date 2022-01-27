@@ -14,6 +14,7 @@ namespace Services.MapperProfiles
     {
         public MapProfile()
         {
+            //map models and dtoModels
             CreateMap<Country, CountryDto>().ReverseMap();
             CreateMap<ItemType, ItemTypeDto>().ReverseMap();
             CreateMap<Order, OrderDto>().ReverseMap();
