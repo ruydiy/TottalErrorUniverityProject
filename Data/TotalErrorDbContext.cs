@@ -25,6 +25,7 @@ namespace Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            
             optionsBuilder.UseSqlServer(@"Server=LAPTOP-F8AKO5E9\MYSQLSERVER2017;Database=UniProjectTotalError;Trusted_Connection=True");
         }
         public override int SaveChanges()
